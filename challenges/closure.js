@@ -1,7 +1,6 @@
-// ==== Closures ==== 
+// ==== Closures ====
 
 /* Task 1: Study the code below and explain in your own words why nested function can access the variable internal. */
-
 
 const external = "I'm outside the function";
 
@@ -11,13 +10,12 @@ function myFunction() {
 
   function nestedFunction() {
     console.log(internal);
-  };
+  }
   nestedFunction();
 }
 myFunction();
 
 // Explanation: any variable, object, function, method, etc, are visible within their lexical environment. nestedFunction()'s lexical environment is everything inside of myFunction().
-
 
 /* Task 2: Counter */
 
@@ -25,7 +23,7 @@ myFunction();
 
 function summation(max) {
   let t = 0; // t for total
-  for(let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 4; i++) {
     t += i;
   }
   return t;
